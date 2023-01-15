@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.5;
+}
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+img, picture, video, canvas, svg {
+  display: inline;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+  color: rgb(83, 83, 83);
+  font-weight: bold;
+}
+li{
+  list-style: none;
+  float: left;
+}
+a:hover{
+  color: #6d5a75;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+.navbar{
+ height: 100px;
+ background-color: #975C8D;
+ flex-direction: row;
+ justify-content: space-around;
+}
+.logo{
+  height: 90px;
+}
+.searchBtn{
+  background-color: #FFF;
+  color:#975C8D;
+  border: none;
+  font-weight: 600;
+}
+.searchBtn2{
+  border:none;
+  background-color: #eee;
+  color:#975C8D;
+  font-weight: 600;
+}
+.searchBtn2:focus{
+  border: none;
+}
+.searchBtn:hover,.searchBtn2:hover{
+background-color: #ccc;
+color: #fff;
+}
+.search{
+  border:none;
+  background-color: #eee;
+  border-bottom: 2px solid #bbb;
+}
+.search:focus{
+  outline: none;
+}
+.nav-link{
+  color: #FFF;
+}
+.nav-link:hover{
+  color: #ccc;
+}
+.nav-link:focus{
+  color: #bbb;
+}
+.nav-links > li:nth-child(2){
+  padding-left: 30px;
+}
+.nav-links > li:hover{
+  font-weight: bold;
+}
+.menu-icon{
+ height: 30px;
+ width: auto;
+ cursor: pointer;
+ display: none;
+ color: #FBFACD;
+}
+
+@media only screen and (max-width: 810px){
+  .nav-links{
+    display: none;
+  }
+  .menu-icon{
+    display: block;
+  }
+  .searchBtn{
+    display: none;
+  }
+  .form-control{
+    width: 150px;
+    display: none;
+  }
+  .logo{
+    width: 120px;
+  }
+  .btn-show{
+    display: none;
+  }
+}
+@media only screen and (min-width: 809px){
+  .dropdown-show{
+    display: none;
+  }
+}
+@media only screen and (max-width: 994px){
+  .box-col-detail > .detail-book{  
+    width:100%
+  } 
+}
+.detail-book{
+  width: 30%;
+  float: left;
+  margin-bottom: 30px;
+}
+.dropdown-toggle{
+  height:max-content;
+}
+.main{
+  padding: 50px 0 50px 0;
+}
+.box-col{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box{
+  width: 270px;
+  height: 410px;
+  padding: 25px;
+  background-color:#fee8fa;
+  border-radius: 10px;
+  float: left;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-img{
+  width: 160px;
+  height: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  cursor: pointer;
+}
+.book-name{
+  font-size: 18px;
+  font-weight:bolder;
+  color: #6d5a75;
+  line-height: 0.6;
+  margin-top: 16px;
+}
+.book-author{
+  font-size: 14px;
+  font-weight: bold;
+  color: #7D6E83;
+  padding-top: 0;
+  line-height: 0.6;
+}
+.page{
+  font-size: 13px;
+  color: #7D6E83;
+  font-weight: bold;
+  line-height: 0.6;
+}
+.card-btn{
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: #975C8D !important; 
+}
+.btn-link{
+  color: #F8EDE3;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+.btn-link:hover{
+  color: #F8EDE3;
+  letter-spacing: 1px;
+}
+.openMenu{
+  width: 100%;
+  height: auto;
+}
+.openMenuLink{
+  width: 100%;
+  height: auto;
+  padding: 8px;
+  padding-left: 30px;
+  background-color: #eee;
+  font-size: 14px;
+}
+.openMenuLink:hover{
+  padding-left: 40px;
+}
+.toggle-menu{
+  display: none;
+}
+.show{
+  display: block;
+}
+.detay{
+  background-color: #fee8fa;
+  border-radius: 10px;
+}
+.description{
+  font-size: 14px;
+}
+.detay-name{
+  font-size: 23px;
+  color: #6d5a75;
+  font-weight: bold;
+}
+.detay-author{
+  font-size: 19px;
+  color: #836f8b;
+  font-weight: bold;
+}
+.detay-page, .detay-type{
+  font-size: 16px;
+  font-weight: bold;
+  color: #836f8b;
+}
+.book-count{
+ padding-left: 10px;
+ margin-top: 50px;
+}
+.list-title{
+  color: #9d7096;
+}
+svg{
+  cursor: pointer;
+}
+.filter-btn{
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  font-size: 15px;
+  background-color: rgb(234, 234, 234);
+}
+.filter-btn:hover{
+  background-color: #fee8fa;
+}
+.filter-btn:focus{
+  background-color: #b88db1;
+}
