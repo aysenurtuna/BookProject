@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/", bookRoutes);
 
-const PORT = process.env.PORT || 3000;
+const URL = process.env.URL;
 
 mongoose
   .connect(
@@ -23,8 +23,8 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    app.listen(PORT, () => {
-      console.log(`server is running on port: ${PORT}`);
+    app.listen(URL, () => {
+      console.log(`server is running on port: ${URL}`);
     });
   })
   .catch((error) => {
