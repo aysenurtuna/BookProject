@@ -14,7 +14,7 @@ app.use(cors());
 
 app.use("/", bookRoutes);
 
-const URL = "https://hangikitabiokusam.vercel.app/";
+const URL = process.env.URL;
 
 mongoose
   .connect(
