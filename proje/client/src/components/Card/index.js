@@ -27,7 +27,7 @@ function Card(props) {
   }
 
   useEffect(() => {
-    fetch("https://hangikitabiokusam.vercel.app/")
+    fetch("http://localhost:3000")
       .then((res) => res.json())
       .then((data) => {
         setBook("");
